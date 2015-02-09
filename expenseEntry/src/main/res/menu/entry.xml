@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/leftEntry"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_arrow_left"
+        android:title="@string/left_entry" />
+    <item 
+        android:id="@+id/rightEntry"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_arrow_right"
+        android:title="@string/right_entry"/>
+</menu>

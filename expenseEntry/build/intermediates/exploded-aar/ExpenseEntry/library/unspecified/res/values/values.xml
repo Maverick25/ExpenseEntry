@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StickyListHeadersListView"><attr name="android:clipToPadding"/><attr name="android:drawSelectorOnTop"/><attr format="boolean" name="hasStickyHeaders"/><attr format="boolean" name="isDrawingListUnderStickyHeader"/></declare-styleable>
+</resources>

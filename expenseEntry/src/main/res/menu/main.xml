@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/logout"
+        android:showAsAction="never"
+        android:title="@string/logout"/>
+    <item
+        android:id="@+id/sync"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_could_1"
+        android:title="@string/sync" />
+
+</menu>

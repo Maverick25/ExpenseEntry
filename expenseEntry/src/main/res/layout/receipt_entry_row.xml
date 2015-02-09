@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/receiptLabel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp" 
+        android:textColor="@color/gray"
+        android:text="@string/receipt_label" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle">
+        
+	    <Button
+	        android:id="@+id/takePhoto"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:text="@string/take_photo"
+	        android:textSize="12sp" 
+	        style="?android:attr/buttonBarButtonStyle" />
+	
+	    <Button
+	        android:id="@+id/getFromList"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:text="@string/get_from_list"
+	        android:textSize="12sp" 
+	        style="?android:attr/buttonBarButtonStyle" />
+	
+	    <Button
+	        android:id="@+id/getFromCameraRoll"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:text="@string/get_from_camera_roll"
+	        android:textSize="12sp" 
+	        style="?android:attr/buttonBarButtonStyle" />
+	
+	    <Button
+	        android:id="@+id/removeFile"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:text="@string/remove_file"
+	        android:textSize="12sp" 
+	        style="?android:attr/buttonBarButtonStyle" />
+
+	    <ProgressBar
+	        android:id="@+id/loadingThumb"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:visibility="visible" />
+	    
+	    <ImageView
+	        android:id="@+id/thumb"
+	        android:layout_height="match_parent"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:contentDescription="@string/pin_description"
+	        android:src="@drawable/nothumb"/>
+	    
+	    
+	    
+    </LinearLayout>
+
+</LinearLayout>

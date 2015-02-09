@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.workbook.expenseentry"
+    android:versionCode="8"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/line_wb_logo"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        <activity
+            android:name="net.workbook.expenseentry.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.EntryActivity"
+            android:label="@string/title_activity_entry" >
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.SelectionActivity"
+            android:label="@string/title_activity_selection"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.DateActivity"
+            android:label="@string/title_activity_date"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth" >
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.DescriptionActivity"
+            android:label="@string/title_activity_description"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth" >
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.AmountActivity"
+            android:label="@string/title_activity_amount"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible" >
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.ReceiptFilesActivity"
+            android:label="@string/title_activity_receipt_files" >
+        </activity>
+        <activity
+            android:name="net.workbook.expenseentry.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+    </application>
+
+</manifest>

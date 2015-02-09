@@ -1,0 +1,7 @@
+int attr hasStickyHeaders 0x7f010000
+int attr isDrawingListUnderStickyHeader 0x7f010001
+int[] styleable StickyListHeadersListView { 0x010100eb, 0x010100fc, 0x7f010000, 0x7f010001 }
+int styleable StickyListHeadersListView_android_clipToPadding 0
+int styleable StickyListHeadersListView_android_drawSelectorOnTop 1
+int styleable StickyListHeadersListView_hasStickyHeaders 2
+int styleable StickyListHeadersListView_isDrawingListUnderStickyHeader 3
